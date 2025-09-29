@@ -23,7 +23,8 @@ pipeline {
     choice(name:'ACTION', choices:['plan','apply'], description:'Terraform action')
   }
 
-  options { timestamps(); ansiColor('xterm'); disableConcurrentBuilds() }
+  options { timestamps(); disableConcurrentBuilds() }
+
 
   environment { TF_IN_AUTOMATION = 'true' }
 
