@@ -1,6 +1,4 @@
 # ===== SNS Topic & Email Subscription =====
-variable "alert_email" {}  # we’ll pass this from Jenkins
-
 resource "aws_sns_topic" "alerts" {
   name = "${var.project_name}-alerts"
 }
